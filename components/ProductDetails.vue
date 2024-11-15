@@ -5,15 +5,16 @@
         <img :src="product.image" alt="product img" class="mx-auto my-7">
       </div>
       <div class="p-7">
-        <h2 class="text-4xl m-7"> {{ product.titlle }}</h2>
-        <p class="text-xl m-7">Price - ${{ product.price }}</p>
+        <h2 class="text-4xl my-7">{{ product.title }}</h2>
+        <p class="text-xl my-7">Price - ${{ product.price }}</p>
         <h3 class="font-bold border-b-2 mb-4 pb-2">Product description:</h3>
         <p class="mb-7">{{ product.description }}</p>
+        <button class="btn flex">
+          <i class="material-icons mr-2">add_shopping_cart</i>
+          <span>Add to Cart</span>
+        </button>
       </div>
     </div>
-    <p>{{ product.title }}</p>
-    <p>{{ product.price }}</p>
-    <p>{{ product.id }}</p>
   </div>
 </template>
 
